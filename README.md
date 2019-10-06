@@ -1,5 +1,7 @@
 # My Ludum Dare 45 submission - Loading...
 
+Play here: [https://srynetix.github.io/gamedev/ludumdare45/LD45-fixed.html](https://srynetix.github.io/gamedev/ludumdare45/LD45-fixed.html)
+
 ## Tools used
 
 - Godot Engine 3.1.1
