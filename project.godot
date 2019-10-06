@@ -15,9 +15,28 @@ _global_script_class_icons={
 
 [application]
 
-config/name="LD45"
+config/name="LD45 - Loading..."
+run/main_scene="res://screens/GameScreen.tscn"
+boot_splash/image="res://assets/textures/black.png"
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[layer_names]
+
+2d_physics/layer_1="Dot"
+2d_physics/layer_2="Fragment"
+2d_physics/layer_3="Wall"
 
 [rendering]
 
+quality/2d/use_pixel_snap=true
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://default_env.tres"

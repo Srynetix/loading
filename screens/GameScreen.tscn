@@ -1,0 +1,36 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://screens/GameScreen.gd" type="Script" id=1]
+[ext_resource path="res://objects/music_loop/MusicLoop.tscn" type="PackedScene" id=2]
+[ext_resource path="res://objects/prompt/Prompt.tscn" type="PackedScene" id=3]
+[ext_resource path="res://objects/game_timer/GameTimer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://objects/starfield/Starfield.tscn" type="PackedScene" id=5]
+[ext_resource path="res://objects/wall/Wall.tscn" type="PackedScene" id=6]
+[ext_resource path="res://objects/loading_dot/LoadingDot.tscn" type="PackedScene" id=7]
+[ext_resource path="res://objects/flash/Flash.tscn" type="PackedScene" id=8]
+[ext_resource path="res://objects/background_message/BackgroundMessage.tscn" type="PackedScene" id=9]
+
+[node name="GameScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="MusicLoop" parent="." instance=ExtResource( 2 )]
+
+[node name="Prompt" parent="." instance=ExtResource( 3 )]
+
+[node name="GameTimer" parent="." instance=ExtResource( 4 )]
+
+[node name="Starfield" parent="." instance=ExtResource( 5 )]
+
+[node name="Wall" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1388, 328 )
+
+[node name="LoadingDot" parent="." instance=ExtResource( 7 )]
+
+[node name="Flash" parent="." instance=ExtResource( 8 )]
+
+[node name="BackgroundMessage" parent="." instance=ExtResource( 9 )]
